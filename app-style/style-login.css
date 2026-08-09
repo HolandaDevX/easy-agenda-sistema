@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #29608A;
+    --secondary: #81E981;
+
+    --font-default: "Roboto Serif", serif;
+    --padding-default: 2rem;
+    --margin-default: 1.6rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    background-color: var(--primary);
+    font-family: var(--font-default);
+}
+
+/* Estilos dos elementos top login */
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-login {
+    padding: 2rem;
+    margin-bottom: .5rem;
+    color: #FFF;
+}
+
+.title_login-screen {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5625rem
+}
+
+.info_login-screen {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/* Estilos do form*/
+
+.form-login {
+    width: 100%;
+    padding-top: calc(var(--padding-default) / 4);
+    padding-bottom: calc(var(--padding-default) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.label-login {
+    color: #FFF;
+    font-weight: 100;
+}
+
+.input-login {
+    padding: .4rem;
+    width: 17.5rem;
+    border-radius: 6px;
+    border: none;
+}
+
+.input-login:valid {
+    outline: 1px solid var(--secondary);
+}
+
+.container_btn {
+    padding: var(--padding-default);
+    /* border: 1px solid red; */
+}
+
+.container_btn button {
+    padding: .8rem;
+    margin-bottom: .8rem;
+    width: 17.5rem;
+    display: block;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--secondary);
+}
+
+.container_btn > .btn_register{
+    padding: .8rem;
+    margin-bottom: .8rem;
+    width: 17.5rem;
+    display: block;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--secondary);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: .8125rem;
+}
+
+.container_link-login a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .3rem;
+    color: white;
+    font-weight: 100;
+}

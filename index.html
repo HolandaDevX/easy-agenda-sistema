@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="app-style/style-login.css">
+</head>
+
+<body>
+
+    <div class="container-login">
+        <div class="top-login">
+            <h1 class="title_login-screen">
+                Easy agenda
+            </h1>
+            <P class="info_login-screen">
+                Faça login para continuar
+            </P>
+        </div>
+        <form method="post" class="form-login" id="form">
+                <label for="email-login" class="label-login">E-mail:</label>
+                <input type="email" name="email-login" id="email-login" placeholder="joao123@server.com" required
+                class="input-login">
+                <label for="pass-login" class="label-login">Senha:</label>
+                <input type="password" name="pass-login" id="pass-login" required class="input-login" placeholder="********" minlength="8">
+                
+                <div class="container_btn">
+                    <button type="submit" class="btn_login" id="btn_login">Acessar</button>
+                    <a href="app/register.html" class="btn_register" id="btn-register">Criar conta</a>
+                </div>
+                
+            </form>
+        <div class="container_link-login">
+            <a href="#" class="btn_recover-password">Esqueceu sua senha?</a>
+        </div>
+    </div>
+    <script src="scripts/tela-login.js"></script>
+
+</body>
+
+</html>

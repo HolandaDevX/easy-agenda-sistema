@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="/app-style/style-form-cadastro.css">
+</head>
+
+<body>
+    <form method="post" class="form-register">
+        <fieldset>
+            <legend>
+                Crie sua conta
+            </legend>
+
+            <label for="name-user" class="form-register__label">Nome de usuário:</label>
+            <input type="text" name="name-user" id="name-user" placeholder="Nome de usuário" required
+                class="form-register__input">
+
+            <label for="email-user" class="form-register__label">E-mail:</label>
+            <input type="email" name="email-user" id="email-user" required class="form-register__input" placeholder="joao123@server.com">
+
+            <label for="pass-register" class="form-register__label">Crie sua senha</label>
+            <input type="password" name="pass-register" id="pass-register" class="form-register__input" required
+                minlength="8" placeholder="*********">
+
+                <span class="form-register__label">Você é?</span>
+                <div class="container_type-user">
+
+                <input type="radio" name="type-user" id="client" value="client" required class="container_type-user-label">
+                <label for="client" class="form-register__label"> Cliente
+                </label>
+
+                <input type="radio" name="type-user" id="profissional" value="profissional" required class="container_type-user-label">
+                <label for="profissional" class="form-register__label"> Profissional
+                </label>
+
+            </div>
+        </fieldset>
+
+        <button type="submit" class="form-register__btn-create-account">Criar conta</button>
+    </form>
+</body>
+
+</html>

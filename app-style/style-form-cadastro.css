@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #29608A;
+    --secondary: #81E981;
+
+    --font-default: "Roboto Serif", serif;
+    --padding-default: 2rem;
+    --margin-default: 1.6rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    background-color: var(--primary);
+    font-family: var(--font-default);
+}
+
+.form-register {
+    width: 100%;
+    padding-top: calc(var(--padding-default) / 4);
+    padding-bottom: calc(var(--padding-default) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.form-register legend {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #FFF;
+}
+
+.form-register fieldset {
+    padding: var(--padding-default);
+    padding-top: calc(var(--padding-default) / 4);
+    padding-bottom: calc(var(--padding-default) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    border: none;
+}
+
+.form-register__label {
+    color: #FFF;
+    font-weight: 100;
+}
+
+.form-register__input {
+    padding: .4rem;
+    width: 17.5rem;
+    border-radius: 6px;
+    border: none;
+}
+
+.container_type-user .container_type-user-label {
+    margin-left: 2rem;
+}
+
+.form-register__btn-create-account {
+    padding: .8rem;
+    margin-bottom: .8rem;
+    width: 17.5rem;
+    display: block;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--secondary);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: .8125rem;
+}
