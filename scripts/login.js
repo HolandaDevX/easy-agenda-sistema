@@ -23,7 +23,7 @@ formLogin.addEventListener('submit', (e) => {
     })
 
     if (autenticar) {
-        window.location = "/app/appointment.html"
+        window.location = "app/appointment.html"
     } else {
         messageErrorLogin()
     }
@@ -37,4 +37,5 @@ const messageErrorLogin = () => {
 
     emailLogin.value = ''
     passLogin.value = ''
+
 }
