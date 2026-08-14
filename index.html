@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="app-style/style-login.css">
+    <link rel="stylesheet" href="app-style/default.css">
 </head>
 
 <body>
@@ -19,16 +20,18 @@
                 Faça login para continuar
             </P>
         </div>
-        <form method="post" class="form-login" id="form">
+        <form class="form-login" id="form">
                 <label for="email-login" class="label-login">E-mail:</label>
                 <input type="email" name="email-login" id="email-login" placeholder="joao123@server.com" required
                 class="input-login">
                 <label for="pass-login" class="label-login">Senha:</label>
                 <input type="password" name="pass-login" id="pass-login" required class="input-login" placeholder="********" minlength="8">
-                
+
+                <span class="message-error-login"></span>
+
                 <div class="container_btn">
                     <button type="submit" class="btn_login" id="btn_login">Acessar</button>
-                    <a href="app/register.html" class="btn_register" id="btn-register">Criar conta</a>
+                    <a href="app/register.html" class="btn_register" id="btn_register">Criar conta</a>
                 </div>
                 
             </form>
@@ -36,7 +39,8 @@
             <a href="#" class="btn_recover-password">Esqueceu sua senha?</a>
         </div>
     </div>
-    <script src="scripts/tela-login.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/usuarios.js"></script>
 
 </body>
 
