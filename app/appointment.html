@@ -20,25 +20,35 @@
 
             <h2 class="appointment__date-select-title">Agosto, 2026</h2>
 
-            <ul class="appointment__week">
-                <li>Seg</li>
-                <li>Ter</li>
-                <li>Qua</li>
-                <li>Qui</li>
-                <li id="selected-week">Sex</li>
-                <li>Sáb</li>
-                <li>Dom</li>
-            </ul>
-
-
-            <ul class="appointment__days">
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-                <li id="seleceted-day">16</li>
-                <li>17</li>
-                <li>18</li>
+            <ul class="dias-semana">
+                <li>
+                    <span class="week">Seg</span>
+                    <span class="date">10</span>
+                </li>
+                <li>
+                    <span class="week">Ter</span>
+                    <span class="date">11</span>
+                </li>
+                <li>
+                    <span class="week">Qua</span>
+                    <span class="date">12</span>
+                </li>
+                <li>
+                    <span class="week">Qui</span>
+                    <span class="date">13</span>
+                </li>
+                <li>
+                    <span class="week">Sex</span>
+                    <span class="date">14</span>
+                </li>
+                <li>
+                    <span class="week">Sáb</span>
+                    <span class="date">15</span>
+                </li>
+                <li>
+                    <span class="week">Dom</span>
+                    <span class="date">16</span>
+                </li>
             </ul>
 
         </article>
@@ -87,22 +97,26 @@
             <h2>Escolha seu atendente</h2>
 
             <article class="appointment__profissional-select">
-                <div class="appointment__profissional-perfil">
-                    <label for="select-perfil-1" name="joel">Joel
-                        <input type="checkbox" id="select-perfil-1">
+                    <label for="profissional-1" class="container-input">
+                        <input type="radio" name="input-profissional" id="profissional-1" value="joao">
+                        <span>João</span>
                     </label>
-                    <label for="select-perfil-2">Pedro
-                        <input type="checkbox" id="select-perfil-2">
+                    <label for="profissional-2" class="container-input">
+                        <input type="radio" name="input-profissional" id="profissional-2" value="pedro">
+                        <span>Pedro</span>
                     </label>
-                    <label for="select-perfil-3">Joel
-                        <input type="checkbox" id="select-perfil-3">
+                    <label for="profissional-3" class="container-input">
+                        <input type="radio" name="input-profissional" id="profissional-3" value="marcos">
+                        <span>Marcos</span>
                     </label>
-                </div>
+
+
             </article>
         </section>
 
         <button class="appointment__btn-proceed">Continuar</button>
     </section>
+    <script src="../scripts/appoiment.js"></script>
 </body>
 
 </html>
